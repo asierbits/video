@@ -7,6 +7,29 @@ Personajes y objetos dibujados en SVG, banda sonora original sintetizada (sin de
 - Vídeo 1 · cortometraje de tensión (38 s): [`render/knok.mp4`](render/knok.mp4)
 - Vídeo 2 · «3 meses. 1.000 CVs. 0 llamadas.» (30 s): [`render/knok-cv.mp4`](render/knok-cv.mp4)
 - Vídeo 3 · «Querida yo de hace tres meses» con voz en off (30 s): [`render/knok-carta.mp4`](render/knok-carta.mp4)
+- Vídeo 4 · «El diario de Dani», historia con 5 voces (30 s): [`render/diario-dani.mp4`](render/diario-dani.mp4)
+
+---
+
+## Vídeo 4 — «El diario de Dani»
+
+Historia contada en las páginas de un cuaderno de rayas, con personajes originales dibujados "a boli"
+(en el espíritu de los diarios ilustrados), línea temblorosa de animación a mano, pasos de página en 3D y
+bocadillos. **No promociona el producto**: la historia lleva a la idea de knok (llamar bien, a la puerta correcta)
+y sólo hay un guiño sutil en la portada final (una puerta con ondas de "toc toc").
+
+| Personaje | Voz (Kokoro) | Frase |
+|---|---|---|
+| Dani (narrador) | `em_alex` +1,5 semitonos | «Lunes. Hoy he mandado cincuenta currículums. El mismo a todos. Eficiencia pura.» |
+| Robot del filtro | `am_michael` + efecto robot | «Su perfil no encaja con nuestros requisitos.» |
+| Mamá | `ef_dora` −1,5 semitonos | «En mis tiempos ibas a la puerta y llamabas.» |
+| Sara | `if_sara` (fonética española) | «Pues llama a menos puertas… pero llama bien.» |
+| Entrevistador | `em_santa` −3 semitonos | «¿Daniel? Pasa, pasa.» |
+
+Final: *«Nota mental: mamá tenía razón. Solo había que llamar… a la puerta correcta.»* — y mamá asoma: «te lo dije».
+
+Guion en `scripts/greg_lines.py`; voces `scripts/generate_voice_greg.py`; música (ukelele) y efectos
+`scripts/generate_music_greg.py`; animación `src/greg/`. Exportar: `npm run render:diario`.
 
 ---
 
