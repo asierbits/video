@@ -3,6 +3,8 @@ import {Carta, CARTA_TOTAL} from './carta/Carta';
 import {KnokCV} from './cv/KnokCV';
 import {Greg, GREG_TOTAL} from './greg/Greg';
 import {Arcade, ARCADE_TOTAL} from './arcade/Arcade';
+import {Launch, LAUNCH_TOTAL} from './launch/Launch';
+import {Machine, MACHINE_TOTAL} from './machine/Machine';
 import {CV_TOTAL} from './cv/cvTheme';
 import {KnokFilm} from './KnokFilm';
 import {FPS, HEIGHT, TOTAL, WIDTH} from './theme';
@@ -19,5 +21,9 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="DiarioDani" component={Greg} durationInFrames={GREG_TOTAL} fps={FPS} width={WIDTH} height={HEIGHT} />
     {/* Vídeo 5: «Reto arcade», minijuego retro interactivo (30 s) */}
     <Composition id="RetoArcade" component={Arcade} durationInFrames={ARCADE_TOTAL} fps={FPS} width={WIDTH} height={HEIGHT} />
+    {/* Vídeo 6: «Lanzamiento», película de producto premium sin voces (30 s) */}
+    <Composition id="Lanzamiento" component={Launch} durationInFrames={LAUNCH_TOTAL} fps={FPS} width={WIDTH} height={HEIGHT} />
+    {/* Vídeo 7: «La máquina», reacción en cadena de plastilina sin voces (30 s) */}
+    <Composition id="LaMaquina" component={Machine} durationInFrames={MACHINE_TOTAL} fps={FPS} width={WIDTH} height={HEIGHT} />
   </>
 );

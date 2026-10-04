@@ -9,6 +9,40 @@ Personajes y objetos dibujados en SVG, banda sonora original sintetizada (sin de
 - Vídeo 3 · «Querida yo de hace tres meses» con voz en off (30 s): [`render/knok-carta.mp4`](render/knok-carta.mp4)
 - Vídeo 4 · «El diario de Dani», historia con 5 voces (30 s): [`render/diario-dani.mp4`](render/diario-dani.mp4)
 - Vídeo 5 · «Reto arcade», minijuego retro interactivo (30 s): [`render/reto-arcade.mp4`](render/reto-arcade.mp4)
+- Vídeo 6 · «Lanzamiento», película de producto premium sin voces (30 s): [`render/lanzamiento.mp4`](render/lanzamiento.mp4)
+- Vídeo 7 · «La máquina», reacción en cadena de plastilina sin voces (30 s): [`render/la-maquina.mp4`](render/la-maquina.mp4)
+
+---
+
+## Vídeo 6 — «Lanzamiento»
+
+Estilo presentación de producto premium: fondo oscuro con auroras, paneles de cristal, mockups de móvil y
+navegador en 3D y titulares que entran palabra a palabra. Música electrónica a 120 BPM con efectos de interfaz.
+
+| Tiempo | Bloque |
+|---|---|
+| 0–2 s | 18 notificaciones de «Gracias por tu interés, pero…» se amontonan · *Buscar trabajo se ha roto.* |
+| 2–4 s | DROP: todo implosiona en un punto de luz → icono y logo **knok** |
+| 4–10 s | *Cada correo, a medida.* Móvil con el correo reescribiéndose en vivo y selector de tono |
+| 10–16 s | *Ofertas que encajan contigo.* Globo de puntos, arcos y tarjetas con % de encaje · 37 encajan |
+| 16–20 s | *Un clic. Todas enviadas.* Botón de cristal, 37 sobres que salen disparados |
+| 20–25 s | *Y aplica por ti en LinkedIn y más.* Navegador en 3D con la extensión aplicando en 3 webs |
+| 25–30 s | Logo **knok** · *Llama distinto.* |
+
+Código: `src/launch/`. Música: `scripts/generate_music_launch.py`. Exportar: `npm run render:lanzamiento`.
+
+## Vídeo 7 — «La máquina»
+
+Una máquina de reacción en cadena (tipo Rube Goldberg) de plastilina pastel, animada "a saltitos" como el
+stop-motion. Una canica con tu CV recorre las estaciones y, al final, encaja en la «o» del logo.
+Solo sonido: kalimba suave + efectos (rodar, clacs, rodillos, plinks, campana, botón, disparos, dominó, teléfono).
+
+SALIDA (rampas) → PERSONALIZA (rodillos de pintura + una grúa le pone una boina) → FILTRA (tablero de clavos:
+sólo una cubeta «¡encaja!») → ENVÍA (botón rojo y 12 cañones que meten canicas en 12 casitas) →
+…Y TE LLAMAN (cadena de dominó que hace sonar un teléfono antiguo) → logo **knok** · *Deja que la máquina trabaje.*
+
+Tiempos compartidos imagen/sonido en `src/machine/events.json`. Código: `src/machine/`.
+Sonido: `scripts/generate_music_machine.py`. Exportar: `npm run render:maquina`.
 
 ---
 
