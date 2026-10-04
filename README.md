@@ -6,6 +6,36 @@ Personajes y objetos dibujados en SVG, banda sonora original sintetizada (sin de
 **Resultados:**
 - Vídeo 1 · cortometraje de tensión (38 s): [`render/knok.mp4`](render/knok.mp4)
 - Vídeo 2 · «3 meses. 1.000 CVs. 0 llamadas.» (30 s): [`render/knok-cv.mp4`](render/knok-cv.mp4)
+- Vídeo 3 · «Querida yo de hace tres meses» con voz en off (30 s): [`render/knok-carta.mp4`](render/knok-carta.mp4)
+
+---
+
+## Vídeo 3 — «Querida yo de hace tres meses»
+
+Una chica le habla a su yo del pasado, como una carta en voz alta. Visualmente es **un único plano**:
+una línea del tiempo que baja por la página mientras se dibujan ilustraciones de línea fina, de la noche azul
+(el pasado) al amanecer cálido (knok). Subtítulos escritos a mano y sincronizados palabra a palabra.
+
+> Querida yo de hace tres meses: sé que estás cansada. Que mandas currículums a ciegas… y que cada
+> «ya te llamaremos» duele un poquito más. Te cuento un secreto: no eras tú. Era el método.
+> Un día encontré knok. Escribe correos que suenan a mí. Busca por todo internet las ofertas que encajan
+> conmigo. Y con un solo clic… salen todas. Hasta aplica por mí en LinkedIn. ¿Y sabes qué? El lunes
+> empiezo. Así que respira. Lo mejor está por llegar.
+>
+> *Con cariño, tu yo del futuro.* — knok
+
+- **Voz:** Kokoro-82M (Apache 2.0, uso comercial permitido), voz femenina en español `ef_dora`, procesada
+  (EQ, compresión suave, sala). Guion en `scripts/voice_lines.py` (texto en pantalla + texto fonético para la voz).
+- **Música:** piano íntimo en Si menor que se abre a Re mayor al decir «encontré knok»; baja sola cuando habla la voz.
+- **Cambiar la voz por una grabación real:** sustituye `public/voice.wav` y ajusta los tiempos en
+  `src/carta/timings.json`, después `python3 scripts/generate_music_carta.py`.
+
+```bash
+pip install kokoro-onnx soundfile numpy scipy
+# modelo: kokoro-v1.0.onnx y voices-v1.0.bin (releases de github.com/thewh1teagle/kokoro-onnx) en ../tts o KOKORO_DIR
+python3 scripts/generate_voice.py && python3 scripts/generate_music_carta.py
+npm run render:carta
+```
 
 ---
 

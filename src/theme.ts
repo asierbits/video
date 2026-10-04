@@ -55,6 +55,7 @@ const FONT_FILES: [string, string, string, string][] = [
   ['Permanent Marker', 'permanent-marker.woff2', '400', 'normal'],
   ['Fredoka', 'fredoka-600.woff2', '600', 'normal'],
   ['Fredoka', 'fredoka-700.woff2', '700', 'normal'],
+  ['Caveat', 'caveat-600.woff2', '600', 'normal'],
 ];
 
 if (typeof document !== 'undefined') {
@@ -80,4 +81,5 @@ export const fonts = {
   sans: '"Space Grotesk", sans-serif',
   marker: '"Permanent Marker", cursive',
   round: 'Fredoka, sans-serif',
+  hand: 'Caveat, cursive',
 };

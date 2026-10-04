@@ -8,11 +8,13 @@
     "studio": "remotion studio",
     "render": "remotion render KnokFilm out/knok.mp4",
     "still": "remotion still KnokFilm out/still.png",
-    "render:cv": "remotion render KnokCV out/knok-cv.mp4"
+    "render:cv": "remotion render KnokCV out/knok-cv.mp4",
+    "render:carta": "remotion render KnokCarta out/knok-carta.mp4"
   },
   "dependencies": {
     "@remotion/cli": "4.0.532",
     "@remotion/noise": "4.0.532",
+    "@remotion/paths": "^4.0.532",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "remotion": "4.0.532"
