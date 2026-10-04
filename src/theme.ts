@@ -57,6 +57,8 @@ const FONT_FILES: [string, string, string, string][] = [
   ['Fredoka', 'fredoka-700.woff2', '700', 'normal'],
   ['Caveat', 'caveat-600.woff2', '600', 'normal'],
   ['Patrick Hand', 'patrick-hand.woff2', '400', 'normal'],
+  ['Press Start 2P', 'press-start.woff2', '400', 'normal'],
+  ['VT323', 'vt323.woff2', '400', 'normal'],
 ];
 
 if (typeof document !== 'undefined') {
@@ -84,4 +86,6 @@ export const fonts = {
   round: 'Fredoka, sans-serif',
   hand: 'Caveat, cursive',
   diary: '"Patrick Hand", cursive',
+  pixel: '"Press Start 2P", monospace',
+  term: 'VT323, monospace',
 };

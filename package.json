@@ -10,7 +10,8 @@
     "still": "remotion still KnokFilm out/still.png",
     "render:cv": "remotion render KnokCV out/knok-cv.mp4",
     "render:carta": "remotion render KnokCarta out/knok-carta.mp4",
-    "render:diario": "remotion render DiarioDani out/diario-dani.mp4"
+    "render:diario": "remotion render DiarioDani out/diario-dani.mp4",
+    "render:arcade": "remotion render RetoArcade out/reto-arcade.mp4"
   },
   "dependencies": {
     "@remotion/cli": "4.0.532",

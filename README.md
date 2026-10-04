@@ -8,6 +8,26 @@ Personajes y objetos dibujados en SVG, banda sonora original sintetizada (sin de
 - Vídeo 2 · «3 meses. 1.000 CVs. 0 llamadas.» (30 s): [`render/knok-cv.mp4`](render/knok-cv.mp4)
 - Vídeo 3 · «Querida yo de hace tres meses» con voz en off (30 s): [`render/knok-carta.mp4`](render/knok-carta.mp4)
 - Vídeo 4 · «El diario de Dani», historia con 5 voces (30 s): [`render/diario-dani.mp4`](render/diario-dani.mp4)
+- Vídeo 5 · «Reto arcade», minijuego retro interactivo (30 s): [`render/reto-arcade.mp4`](render/reto-arcade.mp4)
+
+---
+
+## Vídeo 5 — «Reto arcade»
+
+Ni historia ni anuncio: un **videojuego de 8 bits que el espectador juega** (pausa, piensa, comenta).
+Pixel art, pantalla CRT, música chiptune sintetizada y voz de presentador de recreativa.
+
+| Tiempo | Pantalla | Qué pasa |
+|---|---|---|
+| 0–2 s | RETO | «¿Puedes encontrar el CV que consigue la entrevista?» · PULSA START |
+| 2–9 s | Ronda 1 | 42 CVs idénticos que se mueven; uno es distinto. 5 s de cuenta atrás → *el truco: no ser una copia más* |
+| 9–16 s | Ronda 2 | «Se busca: diseño · remoto · junior». ¿A, B o C? → *buscar lo que encaja, no lo primero* |
+| 16–23 s | Ronda 3 | Carrera a 20 puertas: A va de una en una, B pulsa un botón → *no perder tiempo en lo repetitivo* |
+| 23–27 s | Puntuación | 3/3 ¡CRACK! · 2/3 CASI CASI · 0-1 SIGUE LEYENDO → **COMENTA TU PUNTUACIÓN** |
+| 27–30 s | CONTINUE? | Cuenta atrás 9-8-7, cae una moneda con la «k» → **knok · tu vida extra buscando curro** |
+
+Audio: `scripts/arcade_lines.py` (frases del presentador) + `scripts/generate_arcade_audio.py` (chiptune, efectos,
+voz y mezcla). Animación: `src/arcade/`. Exportar: `npm run render:arcade`.
 
 ---
 
