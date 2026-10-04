@@ -4,10 +4,11 @@
   "private": true,
   "description": "KNOK — cortometraje promocional vertical (Remotion)",
   "scripts": {
-    "music": "python3 scripts/generate_music.py",
+    "music": "python3 scripts/generate_music.py && python3 scripts/generate_music_cv.py",
     "studio": "remotion studio",
     "render": "remotion render KnokFilm out/knok.mp4",
-    "still": "remotion still KnokFilm out/still.png"
+    "still": "remotion still KnokFilm out/still.png",
+    "render:cv": "remotion render KnokCV out/knok-cv.mp4"
   },
   "dependencies": {
     "@remotion/cli": "4.0.532",

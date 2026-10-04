@@ -1,9 +1,37 @@
-# knok — cortometraje promocional (vertical 9:16)
+# knok — vídeos promocionales (vertical 9:16)
 
 Vídeo de 38 s (1080×1920, 30 fps) hecho 100 % con código en [Remotion](https://remotion.dev).
 Personajes y objetos dibujados en SVG, banda sonora original sintetizada (sin derechos de terceros).
 
-**Resultado:** [`render/knok.mp4`](render/knok.mp4)
+**Resultados:**
+- Vídeo 1 · cortometraje de tensión (38 s): [`render/knok.mp4`](render/knok.mp4)
+- Vídeo 2 · «3 meses. 1.000 CVs. 0 llamadas.» (30 s): [`render/knok-cv.mp4`](render/knok-cv.mp4)
+
+---
+
+## Vídeo 2 — «3 meses. 1.000 CVs. 0 llamadas.»
+
+Tono cercano y con humor. El protagonista es el propio **CV**: una hoja con cara, brazos y piernas de dibujo animado clásico.
+Colores vivos tipo papel, rotulador y pósits. Música alegre (120 BPM, Do mayor) con efectos cómicos.
+
+| Tiempo | Escena | Qué pasa |
+|---|---|---|
+| 0–2,5 s | Calendario | Pasan marzo, abril, mayo, junio, llenos de cruces. Pósit: *3 meses.* |
+| 2,5–5 s | Fotocopiadora | Escupe copias idénticas (y aburridas) del CV. Contador hasta 1000. Pósit: *1.000 CVs.* |
+| 5–8 s | El móvil | En la mesa, criando telarañas, una araña y una bola de paja. Trombón triste. Pósit: *0 llamadas.* |
+| 8–11 s | Papelera | Al CV le caen bolas de papel (¡bonk!). Baja un móvil con knok: *¿Te echo una mano?* Y salta. |
+| 11–16 s | 01 · Correo a medida | Un probador: boina, corbata, cascos, casco de obra… cada empresa, un saludo distinto. |
+| 16–20 s | 02 · Ofertas que encajan | Un "match" de ofertas: NOPE / ¡MATCH! y los corazones van a un bote. |
+| 20–23 s | 03 · Un solo click | Salta sobre ENVIAR y los correos salen disparados por tubos neumáticos. |
+| 23–26 s | 04 · Extensión de Chrome | Aplasta-topos: el mazo knok convierte cada "Aplicar" en "hecho" en LinkedIn, InfoJobs, Indeed. |
+| 26–28 s | ¡Suena! | El mismo móvil vibra, se rompe la telaraña: *Nova Studio*. El pósit: ~~0 llamadas~~ *¡Me llaman!* |
+| 28–30 s | Cierre | **knok** · *Que te llamen a ti.* |
+
+Código: `src/cv/` (escenas `C01…C10`, personaje `Sheet.tsx`). Música: `scripts/generate_music_cv.py` → `public/music-cv.wav`.
+
+---
+
+## Vídeo 1 — cortometraje
 
 ## Guion (escaleta)
 
@@ -32,9 +60,10 @@ y un pulso épico tipo taiko (Re m – Si♭ – Fa – Do) en el acto 2.
 
 ```bash
 npm install
-npm run music     # (opcional) regenera public/music.wav — requiere python3 + numpy + scipy
+npm run music     # (opcional) regenera las músicas — requiere python3 + numpy + scipy
 npm run studio    # previsualizar y editar en el navegador
-npm run render    # exporta out/knok.mp4
+npm run render    # exporta out/knok.mp4 (vídeo 1)
+npm run render:cv # exporta out/knok-cv.mp4 (vídeo 2)
 ```
 
 Estructura: `src/theme.ts` (escaleta, colores, fuentes), `src/scenes/S01…S10` (una escena por archivo),

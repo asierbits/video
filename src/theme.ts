@@ -52,6 +52,9 @@ const FONT_FILES: [string, string, string, string][] = [
   ['Instrument Serif', 'instrument-serif-italic.woff2', '400', 'italic'],
   ['Space Grotesk', 'grotesk-500.woff2', '500', 'normal'],
   ['Space Grotesk', 'grotesk-700.woff2', '700', 'normal'],
+  ['Permanent Marker', 'permanent-marker.woff2', '400', 'normal'],
+  ['Fredoka', 'fredoka-600.woff2', '600', 'normal'],
+  ['Fredoka', 'fredoka-700.woff2', '700', 'normal'],
 ];
 
 if (typeof document !== 'undefined') {
@@ -75,4 +78,6 @@ export const fonts = {
   mono: '"JetBrains Mono", monospace',
   serif: '"Instrument Serif", serif',
   sans: '"Space Grotesk", sans-serif',
+  marker: '"Permanent Marker", cursive',
+  round: 'Fredoka, sans-serif',
 };
