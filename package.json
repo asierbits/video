@@ -1,0 +1,23 @@
+{
+  "name": "knok-film",
+  "version": "1.0.0",
+  "private": true,
+  "description": "KNOK — cortometraje promocional vertical (Remotion)",
+  "scripts": {
+    "music": "python3 scripts/generate_music.py",
+    "studio": "remotion studio",
+    "render": "remotion render KnokFilm out/knok.mp4",
+    "still": "remotion still KnokFilm out/still.png"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.532",
+    "@remotion/noise": "4.0.532",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "remotion": "4.0.532"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.0",
+    "typescript": "5.8.3"
+  }
+}
