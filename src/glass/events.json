@@ -1,0 +1,20 @@
+{
+  "fps": 30,
+  "tapOpen": 24,
+  "typeStart": 36,
+  "loopStart": 90,
+  "freeze": 180,
+  "knocks": [196, 209, 232, 252, 278],
+  "crackAt": [252, 278],
+  "leak": 300,
+  "rip": [334, 396],
+  "wave": 420,
+  "write1": [446, 500],
+  "write2": [514, 582],
+  "crumple": [602, 640],
+  "throw": 640,
+  "replies": [662, 692, 722],
+  "write3": [752, 826],
+  "sticker": 846,
+  "end": 900
+}

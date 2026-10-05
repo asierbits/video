@@ -52,6 +52,16 @@ const FONT_FILES: [string, string, string, string][] = [
   ['Instrument Serif', 'instrument-serif-italic.woff2', '400', 'italic'],
   ['Space Grotesk', 'grotesk-500.woff2', '500', 'normal'],
   ['Space Grotesk', 'grotesk-700.woff2', '700', 'normal'],
+  ['Permanent Marker', 'permanent-marker.woff2', '400', 'normal'],
+  ['Fredoka', 'fredoka-600.woff2', '600', 'normal'],
+  ['Fredoka', 'fredoka-700.woff2', '700', 'normal'],
+  ['Caveat', 'caveat-600.woff2', '600', 'normal'],
+  ['Patrick Hand', 'patrick-hand.woff2', '400', 'normal'],
+  ['Press Start 2P', 'press-start.woff2', '400', 'normal'],
+  ['VT323', 'vt323.woff2', '400', 'normal'],
+  ['Inter', 'inter-400.woff2', '400', 'normal'],
+  ['Inter', 'inter-600.woff2', '600', 'normal'],
+  ['Inter', 'inter-800.woff2', '800', 'normal'],
 ];
 
 if (typeof document !== 'undefined') {
@@ -75,4 +85,11 @@ export const fonts = {
   mono: '"JetBrains Mono", monospace',
   serif: '"Instrument Serif", serif',
   sans: '"Space Grotesk", sans-serif',
+  marker: '"Permanent Marker", cursive',
+  round: 'Fredoka, sans-serif',
+  hand: 'Caveat, cursive',
+  diary: '"Patrick Hand", cursive',
+  pixel: '"Press Start 2P", monospace',
+  term: 'VT323, monospace',
+  ui: 'Inter, sans-serif',
 };

@@ -1,0 +1,396 @@
+1
+00:00:01,200 --> 00:00:02,850
+Mandas cincuenta currículums.
+
+2
+00:00:02,870 --> 00:00:03,886
+Pasan dos semanas.
+
+3
+00:00:03,906 --> 00:00:07,456
+Y lo único que recibes es un correo automático que empieza por
+
+4
+00:00:07,476 --> 00:00:09,115
+«Gracias por tu interés».
+
+5
+00:00:09,515 --> 00:00:11,139
+Si te ha pasado, no eres tú.
+
+6
+00:00:11,159 --> 00:00:15,014
+La forma de buscar trabajo ha cambiado más en los últimos años que
+
+7
+00:00:15,034 --> 00:00:15,880
+en décadas.
+
+8
+00:00:16,080 --> 00:00:17,753
+Hoy vamos a ver qué se ha roto,
+
+9
+00:00:17,773 --> 00:00:21,031
+por qué la inteligencia artificial lo ha complicado aún más,
+
+10
+00:00:21,051 --> 00:00:23,327
+y qué puedes hacer para que te llamen.
+
+11
+00:00:26,127 --> 00:00:29,764
+Hace no tanto, buscar trabajo era sobre todo una cuestión de
+
+12
+00:00:29,784 --> 00:00:30,472
+puertas.
+
+13
+00:00:30,672 --> 00:00:34,468
+Imprimías tu currículum, ibas a la empresa y se lo dabas a una
+
+14
+00:00:34,488 --> 00:00:34,961
+persona.
+
+15
+00:00:34,981 --> 00:00:39,305
+Esa persona te veía, te escuchaba y, con suerte, se acordaba de ti.
+
+16
+00:00:39,505 --> 00:00:42,571
+Había menos ofertas y menos candidatos por oferta.
+
+17
+00:00:42,591 --> 00:00:43,188
+Lento, sí.
+
+18
+00:00:43,208 --> 00:00:44,149
+Pero humano.
+
+19
+00:00:46,949 --> 00:00:49,153
+Luego llegaron los portales de empleo.
+
+20
+00:00:49,173 --> 00:00:51,949
+Y con ellos, el botón de «solicitud rápida».
+
+21
+00:00:52,149 --> 00:00:54,213
+De repente, aplicar costaba un clic.
+
+22
+00:00:54,233 --> 00:00:57,443
+Y cuando algo cuesta un clic, lo hace todo el mundo.
+
+23
+00:00:57,643 --> 00:01:01,706
+Una sola oferta puede recibir cientos de candidaturas en pocos días.
+
+24
+00:01:01,726 --> 00:01:04,088
+Nadie puede leerlas todas con calma.
+
+25
+00:01:04,288 --> 00:01:07,264
+Así que muchas empresas usan filtros automáticos:
+
+26
+00:01:07,284 --> 00:01:10,994
+programas que leen tu currículum antes que cualquier persona,
+
+27
+00:01:11,014 --> 00:01:14,026
+buscan palabras clave y descartan en segundos.
+
+28
+00:01:14,226 --> 00:01:18,089
+Por eso a veces te descartan sin que nadie haya leído tu currículum.
+
+29
+00:01:18,109 --> 00:01:21,630
+No porque no valgas, sino porque no aparecían las palabras que
+
+30
+00:01:21,650 --> 00:01:22,878
+buscaba el filtro.
+
+31
+00:01:23,078 --> 00:01:25,209
+El resultado es un embudo gigante:
+
+32
+00:01:25,229 --> 00:01:27,170
+muchísimas candidaturas arriba…
+
+33
+00:01:27,190 --> 00:01:29,477
+y muy pocas conversaciones abajo.
+
+34
+00:01:32,277 --> 00:01:35,072
+Y entonces llegó la inteligencia artificial.
+
+35
+00:01:35,372 --> 00:01:38,912
+Los candidatos empezaron a usarla para escribir sus cartas.
+
+36
+00:01:38,932 --> 00:01:40,761
+Las empresas, para leerlas.
+
+37
+00:01:40,961 --> 00:01:44,151
+Si todos usamos la misma herramienta de la misma forma,
+
+38
+00:01:44,171 --> 00:01:46,369
+todas las cartas acaban sonando igual:
+
+39
+00:01:46,389 --> 00:01:49,449
+«Me apasiona aportar valor a un equipo dinámico».
+
+40
+00:01:49,649 --> 00:01:51,353
+Una IA escribe, otra IA filtra.
+
+41
+00:01:51,373 --> 00:01:54,912
+Y en medio estás tú, intentando que alguien vea a la persona que
+
+42
+00:01:54,932 --> 00:01:55,744
+hay detrás.
+
+43
+00:01:55,944 --> 00:01:57,799
+La respuesta no es mandar más.
+
+44
+00:01:57,819 --> 00:01:59,019
+Es mandar mejor.
+
+45
+00:01:59,319 --> 00:02:00,998
+Y aquí hay una buena noticia:
+
+46
+00:02:01,018 --> 00:02:04,732
+cuando todo suena igual, lo auténtico destaca más que nunca.
+
+47
+00:02:07,532 --> 00:02:10,865
+Si hablas con gente que se dedica a seleccionar personal,
+
+48
+00:02:10,885 --> 00:02:13,497
+casi todos repiten las mismas tres ideas.
+
+49
+00:02:13,697 --> 00:02:13,923
+Uno:
+
+50
+00:02:13,943 --> 00:02:14,784
+menos y mejor.
+
+51
+00:02:14,804 --> 00:02:18,718
+Unas pocas candidaturas bien pensadas suelen funcionar mejor que
+
+52
+00:02:18,738 --> 00:02:19,737
+cien iguales.
+
+53
+00:02:19,937 --> 00:02:20,141
+Dos:
+
+54
+00:02:20,161 --> 00:02:21,374
+personaliza de verdad.
+
+55
+00:02:21,394 --> 00:02:23,896
+No basta con cambiar el nombre de la empresa.
+
+56
+00:02:23,916 --> 00:02:26,975
+Demuestra que sabes qué hacen y por qué encajas tú.
+
+57
+00:02:27,175 --> 00:02:27,570
+Y tres:
+
+58
+00:02:27,590 --> 00:02:28,281
+apunta bien.
+
+59
+00:02:28,301 --> 00:02:30,651
+Busca ofertas que encajen con tu perfil,
+
+60
+00:02:30,671 --> 00:02:32,666
+tu ciudad y lo que quieres cobrar.
+
+61
+00:02:32,686 --> 00:02:35,789
+Aplicar donde no encajas solo alimenta al filtro.
+
+62
+00:02:35,989 --> 00:02:36,498
+Un truco:
+
+63
+00:02:36,518 --> 00:02:39,787
+lee la oferta tres veces y subraya lo que más se repite.
+
+64
+00:02:39,807 --> 00:02:43,018
+Esas son las palabras que deberían encontrar el filtro…
+
+65
+00:02:43,038 --> 00:02:44,002
+y la persona.
+
+66
+00:02:44,202 --> 00:02:44,825
+Y un extra:
+
+67
+00:02:44,845 --> 00:02:45,761
+haz seguimiento.
+
+68
+00:02:45,781 --> 00:02:49,680
+Un mensaje amable una semana después puede rescatar una candidatura
+
+69
+00:02:49,700 --> 00:02:50,426
+olvidada.
+
+70
+00:02:50,626 --> 00:02:53,460
+El problema es que hacer todo esto bien lleva horas.
+
+71
+00:02:53,480 --> 00:02:54,393
+Muchas horas.
+
+72
+00:02:57,193 --> 00:02:58,796
+Por eso creamos knok.
+
+73
+00:02:59,096 --> 00:03:02,603
+knok busca por todo internet las ofertas que encajan con lo que
+
+74
+00:03:02,623 --> 00:03:04,670
+pides, y te dice por qué encajan.
+
+75
+00:03:04,870 --> 00:03:07,982
+Después escribe un correo distinto para cada empresa,
+
+76
+00:03:08,002 --> 00:03:09,519
+con tu tono y tu historia,
+
+77
+00:03:09,539 --> 00:03:12,516
+que puedes revisar y cambiar antes de enviarlo.
+
+78
+00:03:12,716 --> 00:03:16,192
+Y cuando lo tienes listo, lo envías todo con un solo clic.
+
+79
+00:03:16,392 --> 00:03:20,047
+Con su extensión para Chrome también puedes aplicar en LinkedIn y
+
+80
+00:03:20,067 --> 00:03:23,886
+otros portales, sin rellenar el mismo formulario una y otra vez.
+
+81
+00:03:24,086 --> 00:03:25,538
+La idea no es sustituirte.
+
+82
+00:03:25,558 --> 00:03:29,160
+Es quitarte lo repetitivo, para que te centres en lo importante:
+
+83
+00:03:29,180 --> 00:03:30,682
+preparar la entrevista.
+
+84
+00:03:31,482 --> 00:03:33,884
+Tú decides siempre qué se envía y a quién.
+
+85
+00:03:33,904 --> 00:03:36,700
+knok solo te ahorra empezar de cero cada vez.
+
+86
+00:03:39,500 --> 00:03:40,365
+Resumen rápido:
+
+87
+00:03:40,385 --> 00:03:41,191
+menos y mejor.
+
+88
+00:03:41,211 --> 00:03:42,489
+Personaliza de verdad.
+
+89
+00:03:42,509 --> 00:03:43,197
+Apunta bien.
+
+90
+00:03:43,217 --> 00:03:44,141
+Haz seguimiento.
+
+91
+00:03:44,161 --> 00:03:46,662
+Y deja lo repetitivo a una herramienta.
+
+92
+00:03:47,062 --> 00:03:48,569
+Buscar trabajo ha cambiado.
+
+93
+00:03:48,589 --> 00:03:51,964
+Las reglas son nuevas, pero lo de siempre sigue funcionando:
+
+94
+00:03:51,984 --> 00:03:54,673
+llamar a la puerta correcta, y hacerlo bien.
+
+95
+00:03:54,973 --> 00:03:56,622
+Si este vídeo te ha ayudado,
+
+96
+00:03:56,642 --> 00:03:59,066
+compártelo con alguien que esté buscando.
+
+97
+00:03:59,086 --> 00:04:00,597
+Y suscríbete para más.
+
+98
+00:04:00,797 --> 00:04:02,250
+Nos vemos en el siguiente.
+
+99
+00:04:02,270 --> 00:04:04,397
+Y que el futuro te abra la puerta.
+
