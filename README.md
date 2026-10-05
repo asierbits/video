@@ -11,6 +11,7 @@ Personajes y objetos dibujados en SVG, banda sonora original sintetizada (sin de
 - Vídeo 5 · «Reto arcade», minijuego retro interactivo (30 s): [`render/reto-arcade.mp4`](render/reto-arcade.mp4)
 - Vídeo 6 · «Lanzamiento», película de producto premium sin voces (30 s): [`render/lanzamiento.mp4`](render/lanzamiento.mp4)
 - Vídeo 7 · «La máquina», reacción en cadena de plastilina sin voces (30 s): [`render/la-maquina.mp4`](render/la-maquina.mp4)
+- **TikTok** · «El anuncio que te rechaza» (30 s, sin voces): [`render/anuncio-rechazo.mp4`](render/anuncio-rechazo.mp4)
 - **YouTube** · «Por qué buscar trabajo se ha roto (y cómo arreglarlo)», mini-documental 16:9 (4:14):
   [`render/youtube/`](render/youtube) — vídeo, miniatura, subtítulos `.srt` y descripción con capítulos
 
@@ -200,3 +201,20 @@ npm run render:cv # exporta out/knok-cv.mp4 (vídeo 2)
 
 Estructura: `src/theme.ts` (escaleta, colores, fuentes), `src/scenes/S01…S10` (una escena por archivo),
 `src/components/Character.tsx` (el protagonista), `public/fonts` (Unbounded, JetBrains Mono, Instrument Serif, Space Grotesk — licencia OFL).
+
+---
+
+## TikTok — «El anuncio que te rechaza»
+
+Un anuncio que no enseña el producto: **le pasa algo al propio anuncio**. Empieza como un correo real en tu
+móvil (*«Gracias por tu interés… lamentamos comunicarte que…»*); la IA que lo escribe se atasca en bucle y los
+rechazos se multiplican. Silencio. Alguien llama al cristal **desde dentro del móvil**: marcas de nudillos,
+grietas que se encienden de luz cálida y el anuncio se rasga como papel. Detrás hay una persona que escribe en el
+cristal *«Hola. Soy una persona.» / «No una plantilla.»*, hace una bola con los rechazos, empiezan a llegar
+respuestas buenas, y termina con *«Llama a la puerta correcta.»* + pegatina **knok**.
+
+Sonido (sin voces): hilo musical de ascensor que se desafina, tecleo frenético, silencio, nudillos en cristal,
+crujidos, papel rasgándose, piano cálido, rotulador chirriando, bola de papel, notificaciones y pegatina.
+
+Tiempos: `src/glass/events.json` · animación: `src/glass/Glass.tsx` · sonido: `scripts/generate_audio_glass.py`
+· exportar: `npm run render:anuncio`.

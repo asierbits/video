@@ -15,7 +15,8 @@
     "render:lanzamiento": "remotion render Lanzamiento out/lanzamiento.mp4",
     "render:maquina": "remotion render LaMaquina out/la-maquina.mp4",
     "render:youtube": "remotion render DocYouTube out/doc-youtube.mp4",
-    "still:miniatura": "remotion still MiniaturaYouTube render/youtube/miniatura.png"
+    "still:miniatura": "remotion still MiniaturaYouTube render/youtube/miniatura.png",
+    "render:anuncio": "remotion render AnuncioRechazo out/anuncio-rechazo.mp4"
   },
   "dependencies": {
     "@remotion/cli": "4.0.532",
