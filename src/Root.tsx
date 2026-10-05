@@ -7,6 +7,7 @@ import {Launch, LAUNCH_TOTAL} from './launch/Launch';
 import {Machine, MACHINE_TOTAL} from './machine/Machine';
 import {Doc, DOC_TOTAL, DocSinVoz, Thumb} from './doc/Doc';
 import {Glass, GLASS_TOTAL} from './glass/Glass';
+import {Split, SPLIT_TOTAL} from './split/Split';
 import {CV_TOTAL} from './cv/cvTheme';
 import {KnokFilm} from './KnokFilm';
 import {FPS, HEIGHT, TOTAL, WIDTH} from './theme';
@@ -33,5 +34,7 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="MiniaturaYouTube" component={Thumb} durationInFrames={1} fps={FPS} width={1280} height={720} />
     {/* Anuncio TikTok: «El anuncio que te rechaza» (30 s, sin voces) */}
     <Composition id="AnuncioRechazo" component={Glass} durationInFrames={GLASS_TOTAL} fps={FPS} width={WIDTH} height={HEIGHT} />
+    {/* Anuncio TikTok: «Las dos pantallas» (30 s, sin voces, con personajes) */}
+    <Composition id="DosPantallas" component={Split} durationInFrames={SPLIT_TOTAL} fps={FPS} width={WIDTH} height={HEIGHT} />
   </>
 );

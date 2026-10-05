@@ -17,7 +17,8 @@
     "render:youtube": "remotion render DocYouTube out/doc-youtube.mp4",
     "still:miniatura": "remotion still MiniaturaYouTube render/youtube/miniatura.png",
     "render:anuncio": "remotion render AnuncioRechazo out/anuncio-rechazo.mp4",
-    "render:youtube-sin-voz": "remotion render DocYouTubeSinVoz out/doc-youtube-sin-voz.mp4"
+    "render:youtube-sin-voz": "remotion render DocYouTubeSinVoz out/doc-youtube-sin-voz.mp4",
+    "render:dos-pantallas": "remotion render DosPantallas out/dos-pantallas.mp4"
   },
   "dependencies": {
     "@remotion/cli": "4.0.532",

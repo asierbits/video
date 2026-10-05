@@ -12,6 +12,7 @@ Personajes y objetos dibujados en SVG, banda sonora original sintetizada (sin de
 - Vídeo 6 · «Lanzamiento», película de producto premium sin voces (30 s): [`render/lanzamiento.mp4`](render/lanzamiento.mp4)
 - Vídeo 7 · «La máquina», reacción en cadena de plastilina sin voces (30 s): [`render/la-maquina.mp4`](render/la-maquina.mp4)
 - **TikTok** · «El anuncio que te rechaza» (30 s, sin voces): [`render/anuncio-rechazo.mp4`](render/anuncio-rechazo.mp4)
+- **TikTok** · «Las dos pantallas» (30 s, sin voces, con personajes): [`render/dos-pantallas.mp4`](render/dos-pantallas.mp4)
 - **YouTube** · «Por qué buscar trabajo se ha roto (y cómo arreglarlo)», mini-documental 16:9 (4:14):
   [`render/youtube/`](render/youtube) — vídeo, miniatura, subtítulos `.srt` y descripción con capítulos
 
@@ -221,3 +222,18 @@ crujidos, papel rasgándose, piano cálido, rotulador chirriando, bola de papel,
 
 Tiempos: `src/glass/events.json` · animación: `src/glass/Glass.tsx` · sonido: `scripts/generate_audio_glass.py`
 · exportar: `npm run render:anuncio`.
+
+---
+
+## TikTok — «Las dos pantallas»
+
+Pantalla partida con dos personajes y sus móviles: **arriba Lucía** (busca trabajo), **abajo Marta** (selecciona
+personal). Lucía manda la misma plantilla a 50 empresas; cada envío cruza la línea y las notificaciones idénticas
+se salen del móvil de Marta hasta enterrarla. Marta lo archiva todo y a Lucía le llega el «Gracias por tu
+interés, pero…» (llueve en su ventana). Lucía borra la plantilla y escribe **un solo correo de verdad** (con un
+guiño discreto de knok sobre el teclado), que cruza la pantalla brillando. Marta sonríe y pulsa **Llamar**; la
+llamada sube y el móvil de Lucía vibra. La línea desaparece y se cierra con *«Escribe a personas. No a filtros.»*
++ **knok**. Sin voces: música y efectos.
+
+Tiempos: `src/split/events.json` · personajes: `src/split/People.tsx` · animación: `src/split/Split.tsx`
+· sonido: `scripts/generate_audio_split.py` · exportar: `npm run render:dos-pantallas`.
