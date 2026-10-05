@@ -258,3 +258,46 @@ with wave.open(os.path.join(ROOT, "public", "doc-mix.wav"), "wb") as w:
     w.setframerate(SR)
     w.writeframes((mix * 32767).astype(np.int16).tobytes())
 print("ok -> public/doc-mix.wav", round(DUR, 2), "s")
+
+# ------------------------------------------------------------ versión SIN voz en off
+# La música sube (sin ducking) y cada bloque de texto en pantalla entra con un "tic" suave.
+import re
+
+
+def chunk_starts(l):
+    parts = []
+    for s0 in re.findall(r"[^.!?…:]+[.!?…:]*\s*", l["text"]) or [l["text"]]:
+        s_ = s0.strip()
+        while len(s_) > 68:
+            cut = s_.rfind(", ", 0, 68)
+            if cut < 25:
+                cut = s_.rfind(" ", 0, 68)
+            parts.append(s_[: cut + 1].strip())
+            s_ = s_[cut + 1 :].strip()
+        if s_:
+            parts.append(s_)
+    total = sum(len(p) for p in parts)
+    acc = 0
+    out = []
+    for p in parts:
+        out.append(l["start"] + (l["end"] - l["start"]) * acc / total)
+        acc += len(p)
+    return out
+
+
+ticks = np.zeros((N, 2))
+for l in LINES:
+    for st in chunk_starts(l):
+        tt = T(0.12)
+        put(ticks, np.sin(2 * np.pi * 1760 * tt) * np.exp(-tt / 0.03) * 0.5 + filt(rng.standard_normal(len(tt)), "high", 4000) * np.exp(-tt / 0.006) * 0.3, st, 1.0)
+mix2 = m * 0.62 + wet * 0.14 + x * 0.3 + ticks * 0.08
+mix2 = filt(mix2.T, "high", 35).T
+mix2[-int(2.5 * SR) :] *= np.linspace(1, 0, int(2.5 * SR))[:, None] ** 1.5
+mix2 /= np.max(np.abs(mix2)) + 1e-9
+mix2 = np.tanh(mix2 * 1.2) / np.tanh(1.2) * 0.93
+with wave.open(os.path.join(ROOT, "public", "doc-music.wav"), "wb") as w:
+    w.setnchannels(2)
+    w.setsampwidth(2)
+    w.setframerate(SR)
+    w.writeframes((mix2 * 32767).astype(np.int16).tobytes())
+print("ok -> public/doc-music.wav (sin voz)")

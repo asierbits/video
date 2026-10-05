@@ -37,6 +37,9 @@ El guion evita cifras que no podamos respaldar; si añades datos, cita la fuente
 - Guion: `scripts/doc_lines.py` · voz: `scripts/generate_voice_doc.py` (Kokoro, `ef_dora`)
 - Música y mezcla: `scripts/generate_music_doc.py` · extras (SRT, descripción): `scripts/youtube_extras.py`
 - Animación: `src/doc/` · exportar: `npm run render:youtube` · miniatura: `npm run still:miniatura`
+- **Versión sin voz en off** (`render/youtube/knok-youtube-sin-voz.mp4`): misma historia contada con texto grande
+  en pantalla que entra palabra a palabra, música más presente y un "tic" suave en cada frase.
+  Composición `DocYouTubeSinVoz` · música `public/doc-music.wav` · exportar: `npm run render:youtube-sin-voz`.
 
 ---
 

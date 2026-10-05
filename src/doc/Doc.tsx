@@ -105,7 +105,7 @@ const ChapterCard: React.FC<{chapter: string; t: number; start: number}> = ({cha
   );
 };
 
-export const Doc: React.FC = () => {
+export const Doc: React.FC<{voice?: boolean}> = ({voice = true}) => {
   const frame = useCurrentFrame();
   const t = frame / FPS;
 
@@ -158,12 +158,35 @@ export const Doc: React.FC = () => {
         </div>
       )}
 
-      {/* subtítulos */}
-      {cap && (
+      {/* subtítulos (con voz) o texto narrativo en pantalla (sin voz) */}
+      {cap && voice && (
         <div style={{position: 'absolute', left: 0, right: 0, bottom: 64, display: 'flex', justifyContent: 'center'}}>
           <div style={{maxWidth: 1500, padding: '12px 28px', borderRadius: 16, background: 'rgba(10,10,16,.62)', color: '#fff', fontFamily: fonts.ui, fontWeight: 600, fontSize: 40, lineHeight: 1.3, textAlign: 'center'}}>{cap.text}</div>
         </div>
       )}
+      {cap && !voice && (() => {
+        const words = cap.text.split(' ');
+        const reveal = Math.min(0.55, (cap.end - cap.start) * 0.45);
+        const accent = LOOK[cur.chapter].accent;
+        return (
+          <div style={{position: 'absolute', left: 0, right: 0, bottom: 58, display: 'flex', justifyContent: 'center'}}>
+            <div style={{maxWidth: 1640, display: 'flex', gap: 22, alignItems: 'stretch', padding: '18px 36px 20px 24px', borderRadius: 22, background: 'rgba(10,10,16,.78)', boxShadow: '0 20px 50px rgba(0,0,0,.25)'}}>
+              <div style={{width: 8, borderRadius: 4, background: accent, flexShrink: 0}} />
+              <div style={{color: '#fff', fontFamily: fonts.ui, fontWeight: 700, fontSize: 52, lineHeight: 1.22, letterSpacing: -0.5}}>
+                {words.map((w, i) => {
+                  const at = cap.start + (reveal * i) / words.length;
+                  const p = seg(t, at - 0.02, at + 0.12);
+                  return (
+                    <span key={i} style={{display: 'inline-block', marginRight: 14, opacity: p, transform: `translateY(${(1 - p) * 12}px)`}}>
+                      {w}
+                    </span>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        );
+      })()}
 
       {/* barra de progreso por capítulos */}
       {!inEnd && (
@@ -179,11 +202,14 @@ export const Doc: React.FC = () => {
           })}
         </div>
       )}
-      <Audio src={staticFile('doc-mix.wav')} />
+      <Audio src={staticFile(voice ? 'doc-mix.wav' : 'doc-music.wav')} />
       {total < 0 && null}
     </AbsoluteFill>
   );
 };
+
+/** Versión sin voz en off: la historia se cuenta con texto en pantalla y la música sube. */
+export const DocSinVoz: React.FC = () => <Doc voice={false} />;
 
 /** Miniatura de YouTube (1280×720). */
 export const Thumb: React.FC = () => (
