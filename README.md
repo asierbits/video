@@ -11,6 +11,31 @@ Personajes y objetos dibujados en SVG, banda sonora original sintetizada (sin de
 - Vídeo 5 · «Reto arcade», minijuego retro interactivo (30 s): [`render/reto-arcade.mp4`](render/reto-arcade.mp4)
 - Vídeo 6 · «Lanzamiento», película de producto premium sin voces (30 s): [`render/lanzamiento.mp4`](render/lanzamiento.mp4)
 - Vídeo 7 · «La máquina», reacción en cadena de plastilina sin voces (30 s): [`render/la-maquina.mp4`](render/la-maquina.mp4)
+- **YouTube** · «Por qué buscar trabajo se ha roto (y cómo arreglarlo)», mini-documental 16:9 (4:14):
+  [`render/youtube/`](render/youtube) — vídeo, miniatura, subtítulos `.srt` y descripción con capítulos
+
+---
+
+## YouTube — «Por qué buscar trabajo se ha roto (y cómo arreglarlo)»
+
+Mini-documental horizontal (1920×1080) con voz en off, subtítulos integrados, tarjetas de capítulo,
+indicador de capítulo y barra de progreso, más 10 s de pantalla final con huecos para los elementos de YouTube.
+
+| Capítulo | Contenido |
+|---|---|
+| 0:00 Intro | 50 CVs enviados, 14 días, un «Gracias por tu interés, pero…» · *No eres tú* |
+| 0:23 1. Cuando buscar trabajo era llamar a una puerta | La calle de puertas, entregar el CV en mano · *Lento, sí. Pero humano.* |
+| 0:44 2. El embudo digital | «Solicitud rápida», avalancha de candidaturas, filtro automático, palabras clave, el embudo |
+| 1:29 3. IA contra IA | IA que escribe e IA que filtra, 12 cartas idénticas · *Es mandar mejor* · lo auténtico destaca |
+| 2:04 4. Lo que sí funciona | 1 menos y mejor · 2 personaliza de verdad · 3 apunta bien · truco: leer la oferta · extra: seguimiento |
+| 2:54 5. Cómo lo resolvemos | knok: ofertas que encajan y por qué, correo distinto por empresa, un clic, extensión de Chrome, tú decides |
+| 3:36 Cierre | Resumen, la puerta correcta, comparte y suscríbete · pantalla final |
+
+El guion evita cifras que no podamos respaldar; si añades datos, cita la fuente en la descripción.
+
+- Guion: `scripts/doc_lines.py` · voz: `scripts/generate_voice_doc.py` (Kokoro, `ef_dora`)
+- Música y mezcla: `scripts/generate_music_doc.py` · extras (SRT, descripción): `scripts/youtube_extras.py`
+- Animación: `src/doc/` · exportar: `npm run render:youtube` · miniatura: `npm run still:miniatura`
 
 ---
 

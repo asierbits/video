@@ -13,7 +13,9 @@
     "render:diario": "remotion render DiarioDani out/diario-dani.mp4",
     "render:arcade": "remotion render RetoArcade out/reto-arcade.mp4",
     "render:lanzamiento": "remotion render Lanzamiento out/lanzamiento.mp4",
-    "render:maquina": "remotion render LaMaquina out/la-maquina.mp4"
+    "render:maquina": "remotion render LaMaquina out/la-maquina.mp4",
+    "render:youtube": "remotion render DocYouTube out/doc-youtube.mp4",
+    "still:miniatura": "remotion still MiniaturaYouTube render/youtube/miniatura.png"
   },
   "dependencies": {
     "@remotion/cli": "4.0.532",

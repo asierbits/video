@@ -5,6 +5,7 @@ import {Greg, GREG_TOTAL} from './greg/Greg';
 import {Arcade, ARCADE_TOTAL} from './arcade/Arcade';
 import {Launch, LAUNCH_TOTAL} from './launch/Launch';
 import {Machine, MACHINE_TOTAL} from './machine/Machine';
+import {Doc, DOC_TOTAL, Thumb} from './doc/Doc';
 import {CV_TOTAL} from './cv/cvTheme';
 import {KnokFilm} from './KnokFilm';
 import {FPS, HEIGHT, TOTAL, WIDTH} from './theme';
@@ -25,5 +26,8 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="Lanzamiento" component={Launch} durationInFrames={LAUNCH_TOTAL} fps={FPS} width={WIDTH} height={HEIGHT} />
     {/* Vídeo 7: «La máquina», reacción en cadena de plastilina sin voces (30 s) */}
     <Composition id="LaMaquina" component={Machine} durationInFrames={MACHINE_TOTAL} fps={FPS} width={WIDTH} height={HEIGHT} />
+    {/* YouTube (16:9): mini-documental «Por qué buscar trabajo se ha roto» (~4 min) + miniatura */}
+    <Composition id="DocYouTube" component={Doc} durationInFrames={DOC_TOTAL} fps={FPS} width={1920} height={1080} />
+    <Composition id="MiniaturaYouTube" component={Thumb} durationInFrames={1} fps={FPS} width={1280} height={720} />
   </>
 );
